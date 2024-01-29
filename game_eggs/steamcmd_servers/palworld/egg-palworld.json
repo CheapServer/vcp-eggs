@@ -40,7 +40,7 @@
         "user_viewable": false,
         "user_editable": false,
         "rules": "required|string|in:2394010",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "自動更新",
@@ -50,7 +50,7 @@
         "user_viewable": true,
         "user_editable": true,
         "rules": "required|boolean",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "最大玩家數",
@@ -60,7 +60,7 @@
         "user_viewable": true,
         "user_editable": true,
         "rules": "required|numeric|between:1,32",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "伺服器名稱",
@@ -70,7 +70,7 @@
         "user_viewable": true,
         "user_editable": true,
         "rules": "required|string|max:64",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "伺服器密碼",
@@ -80,7 +80,7 @@
         "user_viewable": true,
         "user_editable": true,
         "rules": "nullable|alpha_dash|between:1,30",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "管理員密碼",
@@ -90,7 +90,7 @@
         "user_viewable": true,
         "user_editable": true,
         "rules": "required|alpha_dash|between:1,30",
-        "field_type": "文字"
+        "field_type": "text"
     },
     {
         "name": "公共IP",
@@ -100,7 +100,7 @@
         "user_viewable": true,
         "user_editable": false,
         "rules": "required|string",
-        "field_type": "文字"
+        "field_type": "text"
     }
 ]
 
