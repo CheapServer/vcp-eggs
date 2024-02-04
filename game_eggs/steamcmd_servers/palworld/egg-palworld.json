@@ -22,7 +22,7 @@
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Setting breakpad minidump AppID = 2394010\"\r\n}",
         "logs": "{}",
-        "stop": "shutdown 15"
+        "stop": "shutdown 1"
     },
     "scripts": {
         "installation": {
