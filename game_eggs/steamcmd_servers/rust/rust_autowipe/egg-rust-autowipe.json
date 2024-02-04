@@ -5,9 +5,9 @@
         "update_url": null
     },
     "exported_at": "2024-02-02T22:25:49-05:00",
-    "name": "Rust Autowipe",
+    "name": "Rust | 腐蝕",
     "author": "support@pterodactyl.io",
-    "description": "The only aim in Rust is to survive. To do this you will need to overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals for meat. Protect yourself from other players, and kill them for meat. Create alliances with other players and form a town. Do whatever it takes to survive.",
+    "description": "在 Rust 中唯一的目標是生存。為了做到這一點，你需要克服諸如饑餓、口渴和寒冷等困難。建立火堆。建立庇護所。殺死動物取肉。保護自己不受其他玩家的侵害，並殺死他們以取肉。與其他玩家結成聯盟，形成一個城鎮。不惜一切代價生存下去。",
     "features": [
         "steam_disk_space"
     ],
@@ -42,7 +42,7 @@
         },
         {
             "name": "Max Players",
-            "description": "The maximum amount of players allowed in the server at once.",
+            "description": "伺服器允許的最大玩家數。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "40",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Server Name",
-            "description": "The name of your server in the public server list.",
+            "description": "在公開伺服器列表中的伺服器名稱",
             "env_variable": "HOSTNAME",
             "default_value": "A Rust Server",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "Level",
-            "description": "The world file for Rust to use.",
+            "description": "Rust 的世界檔案",
             "env_variable": "LEVEL",
             "default_value": "Procedural Map",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "Description",
-            "description": "The description under your server title. Commonly used for rules & info. Use \\n for newlines.",
+            "description": "伺服器的描述。通常用於顯示規則或資訊",
             "env_variable": "DESCRIPTION",
             "default_value": "Powered by Pterodactyl",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "URL",
-            "description": "The URL for your server. This is what comes up when clicking the \"Visit Website\" button.",
+            "description": "伺服器的 URL。這是點擊按鈕“訪問網站”時出現的",
             "env_variable": "SERVER_URL",
             "default_value": "http:\/\/pterodactyl.io",
             "user_viewable": true,
@@ -92,7 +92,7 @@
         },
         {
             "name": "World Size",
-            "description": "The world size for a procedural map.",
+            "description": "設置地圖的大小",
             "env_variable": "WORLD_SIZE",
             "default_value": "3000",
             "user_viewable": true,
@@ -102,7 +102,7 @@
         },
         {
             "name": "World Seed",
-            "description": "The seed for a procedural map.",
+            "description": "地圖的種子碼",
             "env_variable": "WORLD_SEED",
             "default_value": "0",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "Server Image",
-            "description": "The header image for the top of your server listing.",
+            "description": "伺服器列表的標題圖片",
             "env_variable": "SERVER_IMG",
             "default_value": "",
             "user_viewable": true,
@@ -122,7 +122,7 @@
         },
         {
             "name": "RCON Port",
-            "description": "Port for RCON connections.",
+            "description": "RCON 連接端口",
             "env_variable": "RCON_PORT",
             "default_value": "28016",
             "user_viewable": true,
@@ -132,7 +132,7 @@
         },
         {
             "name": "RCON Password",
-            "description": "RCON access password.",
+            "description": "RCON 存取密碼",
             "env_variable": "RCON_PASS",
             "default_value": "CHANGEME",
             "user_viewable": true,
@@ -142,7 +142,7 @@
         },
         {
             "name": "Save Interval",
-            "description": "Sets the server\u2019s auto-save interval in seconds.",
+            "description": "伺服器的自動儲存間隔（秒）。",
             "env_variable": "SAVEINTERVAL",
             "default_value": "60",
             "user_viewable": true,
@@ -152,7 +152,7 @@
         },
         {
             "name": "Additional Arguments",
-            "description": "Add additional startup parameters to the server.",
+            "description": "添加額外的啟動參數",
             "env_variable": "ADDITIONAL_ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -162,7 +162,7 @@
         },
         {
             "name": "Regen Server",
-            "description": "If the server should have its files removed and regenerate the server seed on reinstall.",
+            "description": "伺服器應該移除其檔案\n並重新生成伺服器種子 (需使用重新安裝)",
             "env_variable": "REGEN_SERVER",
             "default_value": "0",
             "user_viewable": true,
@@ -172,7 +172,7 @@
         },
         {
             "name": "Files to remove",
-            "description": "A space-separated list of files to remove when regenerating the server on reinstall.",
+            "description": "生成伺服器時要移除的檔案的列表 (需使用重新安裝)",
             "env_variable": "REMOVE_FILES",
             "default_value": "server\/rust\/player.deaths.*.db server\/rust\/player.identities.*.db server\/rust\/player.states.*.db server\/rust\/player.tokens.db proceduralmap.*.*.*.map server\/rust\/proceduralmap.*.*.*.sav oxide\/data\/Kits_Data.json oxide\/data\/NTeleportationHome.json oxide\/data\/ServerRewards\/player_data.json oxide\/data\/PTTracker\/playtime_data.json",
             "user_viewable": true,
@@ -182,7 +182,7 @@
         },
         {
             "name": "QUERY PORT",
-            "description": "Port for QUERY connections.",
+            "description": "QUERY 端口",
             "env_variable": "QUERY_PORT",
             "default_value": "28017",
             "user_viewable": true,
@@ -192,7 +192,7 @@
         },
         {
             "name": "APP PORT",
-            "description": "Port for Rust+ applications. -1 to disable.",
+            "description": "Rust+ 應用程式的端口 (設定為 -1 禁用)",
             "env_variable": "APP_PORT",
             "default_value": "28082",
             "user_viewable": true,
@@ -202,7 +202,7 @@
         },
         {
             "name": "Custom Map URL",
-            "description": "Overwrites the map with the one from the direct download URL. Invalid URLs will cause the server to crash.",
+            "description": "使用直接下載 URL 中的地圖覆蓋地圖。無效的 URL 將導致伺服器崩潰",
             "env_variable": "MAP_URL",
             "default_value": "",
             "user_viewable": true,
@@ -212,7 +212,7 @@
         },
         {
             "name": "Modding Framework",
-            "description": "The modding framework to be used: carbon, oxide, vanilla.\r\nDefaults to \"vanilla\" for a non-modded server installation.",
+            "description": "要使用的模組框架：carbon, oxide, vanilla。\r\n預設為“vanilla”，適用於非模組化伺服器安裝",
             "env_variable": "FRAMEWORK",
             "default_value": "vanilla",
             "user_viewable": true,
