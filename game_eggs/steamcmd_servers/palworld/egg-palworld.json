@@ -31,117 +31,116 @@
             "entrypoint": "bash"
         }
     },
-"variables": [
-    {
-        "name": "應用程式ID",
-        "description": "請勿編輯！",
-        "env_variable": "SRCDS_APPID",
-        "default_value": "2394010",
-        "user_viewable": false,
-        "user_editable": false,
-        "rules": "required|string|in:2394010",
-        "field_type": "text"
-    },
-    {
-        "name": "自動更新",
-        "description": "啟動伺服器時自動進行更新",
-        "env_variable": "AUTO_UPDATE",
-        "default_value": "1",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|boolean",
-        "field_type": "text"
-    },
-    {
-        "name": "最大玩家數",
-        "description": "",
-        "env_variable": "MAX_PLAYERS",
-        "default_value": "32",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|numeric|between:1,32",
-        "field_type": "text"
-    },
-    {
-        "name": "伺服器名稱",
-        "description": "",
-        "env_variable": "SERVER_NAME",
-        "default_value": "由CheapServer托管的Palworld伺服器",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|string|max:64",
-        "field_type": "text"
-    },
-    {
-        "name": "伺服器密碼",
-        "description": "若指定，玩家需提供此密碼以加入伺服器",
-        "env_variable": "SERVER_PASSWORD",
-        "default_value": "",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "nullable|alpha_dash|between:1,30",
-        "field_type": "text"
-    },
-    {
-        "name": "管理員密碼",
-        "description": "若指定，玩家必須提供此密碼（透過遊戲內聊天或RCON）以獲得伺服器上的管理員指令使用權",
-        "env_variable": "ADMIN_PASSWORD",
-        "default_value": "",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|alpha_dash|between:1,30",
-        "field_type": "text"
-    },
-    {
-        "name": "公共IP",
-        "description": "設定此項為伺服器的公共IP地址",
-        "env_variable": "PUBLIC_IP",
-        "default_value": "0.0.0.0",
-        "user_viewable": true,
-        "user_editable": false,
-        "rules": "required|string",
-        "field_type": "text"
-    },
-    {
-        "name": "RCON 端口",
-        "description": "如果你不知道你在做甚麼，不要動它",
-        "env_variable": "RCON_PORT",
-        "default_value": "25575",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|numeric",
-        "field_type": "text"
-    },
-    {
-        "name": "啟用 RCON",
-        "description": "必須開啟",
-        "env_variable": "RCON_ENABLE",
-        "default_value": "True",
-        "user_viewable": false,
-        "user_editable": false,
-        "rules": "required|string|in:True",
-        "field_type": "text"
-    },
-    {
-        "name": "啟用侵略者(記憶體優化)",
-        "description": "使用True或False來開啟或關閉\r\n可減緩記憶體資源",
-        "env_variable": "ENABLE_ENEMY",
-        "default_value": "True",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "required|string|in:True,False",
-        "field_type": "text"
-    },
-    {
-        "name": "伺服器描述",
-        "description": "給你的伺服器一個簡短說明",
-        "env_variable": "SERVER_DESCRIPTION",
-        "default_value": "",
-        "user_viewable": true,
-        "user_editable": true,
-        "rules": "nullable|string|max:128",
-        "field_type": "text"
-    }
-    
-]
+    "variables": [
+        {
+            "name": "應用程式ID",
+            "description": "請勿編輯！",
+            "env_variable": "SRCDS_APPID",
+            "default_value": "2394010",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": "required|string|in:2394010",
+            "field_type": "text"
+        },
+        {
+            "name": "自動更新",
+            "description": "啟動伺服器時自動進行更新",
+            "env_variable": "AUTO_UPDATE",
+            "default_value": "1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
+            "name": "最大玩家數",
+            "description": "",
+            "env_variable": "MAX_PLAYERS",
+            "default_value": "32",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric|between:1,32",
+            "field_type": "text"
+        },
+        {
+            "name": "伺服器名稱",
+            "description": "",
+            "env_variable": "SERVER_NAME",
+            "default_value": "由CheapServer托管的Palworld伺服器",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:64",
+            "field_type": "text"
+        },
+        {
+            "name": "伺服器密碼",
+            "description": "若指定，玩家需提供此密碼以加入伺服器",
+            "env_variable": "SERVER_PASSWORD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|alpha_dash|between:1,30",
+            "field_type": "text"
+        },
+        {
+            "name": "管理員密碼",
+            "description": "若指定，玩家必須提供此密碼（透過遊戲內聊天或RCON）以獲得伺服器上的管理員指令使用權",
+            "env_variable": "ADMIN_PASSWORD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|alpha_dash|between:1,30",
+            "field_type": "text"
+        },
+        {
+            "name": "公共IP",
+            "description": "設定此項為伺服器的公共IP地址",
+            "env_variable": "PUBLIC_IP",
+            "default_value": "0.0.0.0",
+            "user_viewable": true,
+            "user_editable": false,
+            "rules": "required|string",
+            "field_type": "text"
+        },
+        {
+            "name": "RCON 端口",
+            "description": "如果你不知道你在做甚麼，不要動它",
+            "env_variable": "RCON_PORT",
+            "default_value": "25575",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric",
+            "field_type": "text"
+        },
+        {
+            "name": "啟用 RCON",
+            "description": "必須開啟",
+            "env_variable": "RCON_ENABLE",
+            "default_value": "True",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": "required|string|in:True",
+            "field_type": "text"
+        },
+        {
+            "name": "啟用侵略者(記憶體優化)",
+            "description": "使用True或False來開啟或關閉\r\n可減緩記憶體資源",
+            "env_variable": "ENABLE_ENEMY",
+            "default_value": "True",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|in:True,False",
+            "field_type": "text"
+        },
+        {
+            "name": "伺服器描述",
+            "description": "給你的伺服器一個簡短說明",
+            "env_variable": "SERVER_DESCRIPTION",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:128",
+            "field_type": "text"
+        }
+    ]
 }
