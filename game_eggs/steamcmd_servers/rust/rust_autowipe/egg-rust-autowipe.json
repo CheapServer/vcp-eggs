@@ -52,7 +52,7 @@
         },
         {
             "name": "Server Name",
-            "description": "在公開伺服器列表中的伺服器名稱",
+            "description": "在伺服器列表中顯示的伺服器名稱",
             "env_variable": "HOSTNAME",
             "default_value": "A Rust Server",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "Level",
-            "description": "Rust 的世界檔案",
+            "description": "Rust 的地圖檔案",
             "env_variable": "LEVEL",
             "default_value": "Procedural Map",
             "user_viewable": true,
@@ -162,7 +162,7 @@
         },
         {
             "name": "Regen Server",
-            "description": "伺服器應該移除其檔案\n並重新生成伺服器種子 (需使用重新安裝)",
+            "description": "伺服器應該移除其檔案\r\n並重新生成伺服器種子 (需使用重新安裝)",
             "env_variable": "REGEN_SERVER",
             "default_value": "0",
             "user_viewable": true,

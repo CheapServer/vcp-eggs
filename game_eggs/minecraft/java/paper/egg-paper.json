@@ -5,7 +5,7 @@
         "update_url": null
     },
     "exported_at": "2023-05-17T23:20:29+01:00",
-    "name": "Paper",
+    "name": "Paper | 適合1.13以上",
     "author": "parker@pterodactyl.io",
     "description": "High performance Spigot fork that aims to fix gameplay and mechanics inconsistencies.",
     "features": [
@@ -14,14 +14,14 @@
         "pid_limit"
     ],
     "docker_images": {
-        "Java 8": "ghcr.io\/pterodactyl\/yolks:java_8",
-        "Java 11": "ghcr.io\/pterodactyl\/yolks:java_11",
-        "Java 16": "ghcr.io\/pterodactyl\/yolks:java_16",
-        "Java 17": "ghcr.io\/pterodactyl\/yolks:java_17",
-        "Java 18": "ghcr.io\/pterodactyl\/yolks:java_18"
+        "Java 8 （適用1.0~1.11）": "ghcr.io\/pterodactyl\/yolks:java_8",
+        "Java 11 （適用1.12~1.15）": "ghcr.io\/pterodactyl\/yolks:java_11",
+        "Java 16（適用1.16）": "ghcr.io\/pterodactyl\/yolks:java_16",
+        "Java 17（適用1.17以上）": "ghcr.io\/pterodactyl\/yolks:java_17",
+        "Java 18（適用1.17以上）": "ghcr.io\/pterodactyl\/yolks:java_18"
     },
     "file_denylist": [],
-    "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
+    "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M {{STARTUP_DETAIL}} -jar {{SERVER_JARFILE}}",
     "config": {
         "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"server-port\": \"{{server.build.default.port}}\",\r\n            \"query.port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \")! For help, type \"\r\n}",
@@ -37,7 +37,7 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
+            "name": "更改版本",
             "description": "The version of minecraft to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
@@ -46,8 +46,8 @@
             "rules": "nullable|string|max:20"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "伺服器Jar檔案",
+            "description": "更改用於啟動的伺服器jar檔案。預設為server.jar。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -64,13 +64,22 @@
             "rules": "nullable|string"
         },
         {
-            "name": "Build Number",
-            "description": "The build number for the paper release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "版本號",
+            "description": "Paper的建置編號\r\n\r\n輸入latest為最新",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|max:20"
+        },
+        {
+            "name": "自訂啟動參數",
+            "description": "增加自訂的伺服器啟動參數。請自行負責調整後的後果。預設為\" -Dterminal.jline=false -Dterminal.ansi=true \"。",
+            "env_variable": "STARTUP_DETAIL",
+            "default_value": "-Dterminal.jline=false -Dterminal.ansi=true",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string"
         }
     ]
 }
