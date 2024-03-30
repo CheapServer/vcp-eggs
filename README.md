@@ -190,7 +190,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
   * [Modrinth](game_eggs/minecraft/java/modrinth)
   * [Mohist](game_eggs/minecraft/java/mohist)
   * [NanoLimbo](game_eggs/minecraft/java/nanolimbo)
-  * [NeoForge](game_eggs/minecraft/java/neoforge)
   * [Paper](game_eggs/minecraft/java/paper)
   * [Folia](game_eggs/minecraft/java/folia)
   * [Purpur](game_eggs/minecraft/java/purpur)
@@ -233,7 +232,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
 [Rimworld](game_eggs/rimworld)
 
 * [Open World](game_eggs/rimworld/open_world)
-* [Rimworld Together](game_eggs/rimworld/together)
 
 [SteamCMD Servers](game_eggs/steamcmd_servers) These eggs use SteamCMD to install
 
@@ -256,11 +254,9 @@ If you are reading this it looks like you are looking to add an egg to your serv
 * [Core Keeper](game_eggs/steamcmd_servers/core_keeper)
 * [Counter-Strike](game_eggs/steamcmd_servers/counter_strike/)
   * [Counter-Strike: Source](game_eggs/steamcmd_servers/counter_strike/counter_strike_source/)
-  * [Counter-Strike 2](game_eggs/steamcmd_servers/counter_strike/counter_strike_2/)
 * [Craftopia](game_eggs/steamcmd_servers/craftopia)
 * [Cryofall](game_eggs/steamcmd_servers/cryofall)
 * [DayZ (Experimental)](game_eggs/steamcmd_servers/dayz-experimental)
-* [Dead Matter](game_eggs/steamcmd_servers/dead_matter)
 * [Don't Starve Together](game_eggs/steamcmd_servers/dont_starve)
 * [ECO](game_eggs/steamcmd_servers/eco)
 * [Empyrion - Galactic Survival](game_eggs/steamcmd_servers/empyrion)
@@ -284,7 +280,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
 * [Modiverse](game_eggs/steamcmd_servers/modiverse)
 * [Mordhau](game_eggs/steamcmd_servers/mordhau)
 * [Mount & Blade II: Bannerlord](game_eggs/steamcmd_servers/mount_blade_II_bannerlord)
-* [Myth of Empires](game_eggs/steamcmd_servers/myth_of_empires)
 * [Necesse](game_eggs/steamcmd_servers/necesse)
 * [Neos VR](game_eggs/steamcmd_servers/neosvr)
 * [No More Room in Hell](game_eggs/steamcmd_servers/nmrih)
@@ -330,7 +325,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
 * [The Isle](game_eggs/steamcmd_servers/the_isle)
   * [Evrima](game_eggs/steamcmd_servers/the_isle/evrima)
 * [Team Fortress 2 Classic](game_eggs/steamcmd_servers/team_fortress_2_classic)
-* [TerraTech Worlds](game_eggs/steamcmd_servers/terratech_worlds)
 * [Tower Unite](game_eggs/steamcmd_servers/tower_unite)
 * [Truck Sim](game_eggs/steamcmd_servers/truck-simulator/)
   * [American Truck Simulator](game_eggs/steamcmd_servers/truck-simulator/american-truck-simulator/)
@@ -343,7 +337,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
   * [Valheim Vanilla](game_eggs/steamcmd_servers/valheim/valheim_vanilla)
   * [Valheim BepInEx](game_eggs/steamcmd_servers/valheim/valheim_bepinex)
   * [Valheim Plus Mod](game_eggs/steamcmd_servers/valheim/valheim_plus)
-* [VEIN](game_eggs/steamcmd_servers/vein)
 * [Wurm Unlimited](game_eggs/steamcmd_servers/wurm_unlimited/)
 
 [Teeworlds](game_eggs/teeworlds)
@@ -361,8 +354,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
 * [OpenRCT2](game_eggs/tycoon_games/openrct2)
 * [OpenTTD](game_eggs/tycoon_games/openttd)
 
-[UrbanTerror](game_eggs/urbanterror)
-
 [Veloren](game_eggs/veloren)
 
 [Vintage Story](game_eggs/vintage_story)
@@ -370,6 +361,8 @@ If you are reading this it looks like you are looking to add an egg to your serv
 [Wine Generic](game_eggs/wine/generic)
 
 [Xonotic](game_eggs/xonotic/xonotic)
+
+[YuzuEmu](game_eggs/yuzu-emu)
 
 [FoundryVTT](game_eggs/FoundryVTT)
 
@@ -406,10 +399,6 @@ If you are reading this it looks like you are looking to add an egg to your serv
 ### Folding@Home
 
 * [Folding@Home](/software/foldingathome)
-
-### Forgejo
-
-* [Forgejo](/software/forgejo)
 
 ### Gitea
 
